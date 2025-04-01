@@ -43,11 +43,11 @@ describe('Testes de AnaliseDeDados', () => {
     expect(analise.calcularModa()).toEqual([75]);
   });
 
-  test('Calculando Variancia', async () => {
+  test('Calculando variancia', async () => {
     expect(analise.calcularVariancia()).toBe(800);
   });
 
-  test('Calculando Desvio Padrão', async () => {
+  test('Calculando desvio padrão', async () => {
     expect(analise.calcularDesvioPadrao()).toBeCloseTo(28.284, 3);
   });
 
@@ -63,7 +63,7 @@ describe('Testes de AnaliseDeDados', () => {
     expect(analise.normalizarDados()).toEqual([0.25, 0, 0.5, 0.75, 1]);
   });
 
-  test('Calculando Percentil', async () => {
+  test('Calculando percentil', async () => {
     expect(analise.calcularPercentil(25)).toBe(40);
     expect(analise.calcularPercentil(50)).toBe(60);
     expect(analise.calcularPercentil(75)).toBe(80);
@@ -73,19 +73,11 @@ describe('Testes de AnaliseDeDados', () => {
     expect(analise.calcularPercentil(150)).toBeNull();
   });
 
-
-
-
-
-
-
-
-
-  test('Calculando Soma', async () => {
+  test('Calculando soma', async () => {
     expect(analise.calcularSoma()).toBe(300);
   });
 
-  test('Calculando Produto', async () => {
+  test('Calculando produto', async () => {
     expect(analise.calcularProduto()).toBe(384000000);
   });
 
