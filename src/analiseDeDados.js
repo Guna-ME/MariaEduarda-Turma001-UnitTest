@@ -1,6 +1,6 @@
 class AnaliseDeDados {
     constructor(dados = []) {
-      this.dados = dados; // Array numérico para análise estatística
+      this.dados = dados; // Array numérico para análise estatística 
     }
   
     adicionarDados(novosDados) {
@@ -15,7 +15,7 @@ class AnaliseDeDados {
     ordenarDados() {
       return [...this.dados].sort((a, b) => a - b);
     }
-  
+
     calcularMedia() {
       if (this.dados.length === 0) return null;
       return this.dados.reduce((sum, num) => sum + num, 0) / this.dados.length;
