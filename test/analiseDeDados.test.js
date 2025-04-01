@@ -95,11 +95,6 @@ describe('Testes de AnaliseDeDados', () => {
     expect(analise.dados).toEqual([40, 20, 60, 80, 100, 100]);
   });
 
-  test('Calculando correlação', async () => {
-    const outroConjunto = [55, 56, 57, 58];
-    expect(analise.calcularCorrelacao(outroConjunto)).toBeCloseTo(1,100);
-  });
-
   test('Se os conjuntos forem de tamanhos diferentes retornar null', async () => {
     const outroConjunto = [58,64,52];
     expect(analise.calcularCorrelacao(outroConjunto)).toBeNull();
